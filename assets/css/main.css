@@ -138,24 +138,6 @@ main {
   }
 }
 
-/* <!-- Début arrow2 --> */
-/* .arrow2 {
-  font-family: Poppins, sans-serif;
-  color: #ebeff3;
-  text-align: center;
-  position: absolute;
-  bottom: 3rem;
-  left: 50%;
-  border: solid #ebeff3;
-  border-width: 0 0.25rem 0.25rem 0;
-  display: inline-block;
-  padding: 1rem;
-  -webkit-transform: rotate(45deg);
-  opacity: 0;
-  animation: arrow-up-down 2s infinite, arrow-appear 2s 6s forwards;
-} */
-/* Fin arrow2 */
-
 section,
 marquee {
   font-family: Poppins, sans-serif;
@@ -182,7 +164,7 @@ section#presentation > div.avatar {
 
 section#presentation > div.avatar > img {
   width: 6rem;
-  margin: 2rem;;
+  margin: 2rem;
   display: block;
 }
 
@@ -228,7 +210,6 @@ section#hobbies div.hobby > img {
 }
 
 section#hobbies div.hobby.inverted > img {
-  /* margin-left: 2rem; */
   margin-right: 0;
 }
 
@@ -338,4 +319,37 @@ z {
 
 .greenlink {
   color: #17c417;
+}
+
+section#hobbies div.hobby {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+  border-radius: 1rem;
+  background-color: #f4f4f4;
+}
+
+section#hobbies div.hobby:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(155, 5, 166, 0.4);
+  background-color: #ffffff;
+}
+
+section#hobbies div.hobby:hover img {
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}
+
+section#hobbies div.hobby:hover div {
+  color: #000;
+  transition: color 0.4s ease;
+}
+
+section#hobbies div.hobby a:hover {
+  color: rgb(155, 5, 166);
+  text-decoration: underline;
+}
+
+section#hobbies .tchatsection:hover {
+  box-shadow: 0 0 25px rgba(0, 128, 0, 0.6);
+  transform: scale(1.03);
+  background-color: #1f1f1f;
 }
