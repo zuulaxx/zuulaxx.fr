@@ -9,6 +9,17 @@ body {
   bottom: 0;
 }
 
+/* Canvas des particules */
+canvas#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -137,6 +148,24 @@ main {
     opacity: 1;
   }
 }
+
+/* <!-- Début arrow2 --> */
+/* .arrow2 {
+  font-family: Poppins, sans-serif;
+  color: #ebeff3;
+  text-align: center;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  border: solid #ebeff3;
+  border-width: 0 0.25rem 0.25rem 0;
+  display: inline-block;
+  padding: 1rem;
+  -webkit-transform: rotate(45deg);
+  opacity: 0;
+  animation: arrow-up-down 2s infinite, arrow-appear 2s 6s forwards;
+} */
+/* Fin arrow2 */
 
 section,
 marquee {
@@ -352,4 +381,37 @@ section#hobbies .tchatsection:hover {
   box-shadow: 0 0 25px rgba(0, 128, 0, 0.6);
   transform: scale(1.03);
   background-color: #1f1f1f;
+}
+
+/* Conteneur du compteur */
+#visitCount {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #050505; /* couleur du texte */
+  background: rgba(255, 255, 255, 0.05); /* effet semi-transparent */
+  border: 2px solid rgba(155, 5, 166, 0.6); /* contour violet néon */
+  border-radius: 20px; /* coins arrondis */
+  box-shadow: 0 0 20px rgba(155, 5, 166, 0.5), 0 0 40px rgba(155, 5, 166, 0.2);
+  backdrop-filter: blur(10px); /* effet glass */
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 2rem auto;
+}
+
+/* Animation au survol */
+#visitCount:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(155, 5, 166, 0.7), 0 0 60px rgba(155, 5, 166, 0.3);
+  cursor: default;
+}
+
+/* Pour centrer le compteur sur mobile */
+@media (max-width: 768px) {
+  #visitCount {
+    font-size: 1.5rem;
+    padding: 0.8rem 1.5rem;
+  }
 }
