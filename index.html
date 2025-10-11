@@ -226,12 +226,14 @@
       <br>
       <!--Utiles-->
       <br>
-      <p align="center">👀 &nbsp;Visiteurs</p>
-      <br>
-      <p align="center">
-        <img src="https://profile-counter.glitch.me/zuulaxxwebsite/count.svg" />
-      </p>
+      <p id="visitCount" align="center">0</p>
     </section>
+    <script>
+          let count = localStorage.getItem('visits') || 0;
+          count++;
+          localStorage.setItem('visits', count);
+          document.getElementById('visitCount').innerText = "👀 Visiteurs : " + count;
+        </script>
     <!-- Fin de hobbies -->
     <!-- Début de Salutations -->
     <footer class="guiguisection">
@@ -241,5 +243,70 @@
     </footer>
     <!-- Fin de Salutations -->
   </main>
+  <!-- Canvas pour particules -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Script Particules -->
+  <script>
+    const canvas = document.getElementById('particle-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function createParticle(x, y) {
+      const size = Math.random() * 5 + 2;
+      const color = 'rgba(44, 44, 44, 0.5)'; // Couleur
+      const velocityX = (Math.random() - 0.5) * 2;
+      const velocityY = (Math.random() - 0.5) * 2;
+      particles.push({ x, y, size, color, velocityX, velocityY, life: 1 });
+    }
+
+    function handleParticles() {
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+        p.x += p.velocityX;
+        p.y += p.velocityY;
+        p.size *= 0.96;
+        p.life -= 0.02;
+        if (p.life <= 0) {
+          particles.splice(i, 1);
+          i--;
+        } else {
+          ctx.fillStyle = p.color;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      handleParticles();
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+    function spawnParticles(e) {
+      let x, y;
+      if (e.touches) {
+        x = e.touches[0].clientX;
+        y = e.touches[0].clientY;
+      } else {
+        x = e.clientX;
+        y = e.clientY;
+      }
+      for (let i = 0; i < 6; i++) createParticle(x, y);
+    }
+
+    window.addEventListener('mousemove', spawnParticles);
+    window.addEventListener('touchmove', spawnParticles);
+  </script>
 </body>
 </html>
