@@ -4,7 +4,7 @@
 
 ---
 
-# Bienvenue sur zuulaxx.ml
+# Bienvenue sur zuulaxx.fr
 
 Biographie officiel de zuulaxx (+portfolio) :bowtie:
 
@@ -12,7 +12,7 @@ Biographie officiel de zuulaxx (+portfolio) :bowtie:
 <br>
 <br>
 
-**[W̸̢̧̘͈̤̰̙̩̖̱͎̺͔̣̦̔̔̎̍̒͂̃͛̉͒̀͆̎̓̏̕é̵̡̦̱̩͓̫̼̱̠̖͓̊̓b̶̧̢̢̪͙̮͈̞̦͙̙͈̝̭̘́͊̂͛s̵̳̩͉̲͚̾͋̏̕̚͜͝͝͝ȋ̵̘͍̝̞͙̙͍͍̦̳̜̥̇̑̿̒͝t̴̨̢̨̲͖̟̹̰̺͓̭̱̹͍̬͒̌̎̇̃̊̐͘̚͝͠ȩ̷̣̠̭̬͇̲̑̊̔̍̋͂͗̔͘͠ ](https://zuulaxx.ml)**
+**[W̸̢̧̘͈̤̰̙̩̖̱͎̺͔̣̦̔̔̎̍̒͂̃͛̉͒̀͆̎̓̏̕é̵̡̦̱̩͓̫̼̱̠̖͓̊̓b̶̧̢̢̪͙̮͈̞̦͙̙͈̝̭̘́͊̂͛s̵̳̩͉̲͚̾͋̏̕̚͜͝͝͝ȋ̵̘͍̝̞͙̙͍͍̦̳̜̥̇̑̿̒͝t̴̨̢̨̲͖̟̹̰̺͓̭̱̹͍̬͒̌̎̇̃̊̐͘̚͝͠ȩ̷̣̠̭̬͇̲̑̊̔̍̋͂͗̔͘͠ ](https://zuulaxx.fr)**
 
 <br>
 <br>
@@ -37,7 +37,7 @@ Pour plus d'infos rendez vous sur mon _[Discord](https://discord.gg/aBsvuX9b2Q)_
 
 <p align="center">
 
-  <img src="https://profile-counter.glitch.me/zuulaxx.ml/count.svg" />
+  <img src="https://profile-counter.glitch.me/zuulaxx.fr/count.svg" />
 
 </p>
 
@@ -45,4 +45,4 @@ Pour plus d'infos rendez vous sur mon _[Discord](https://discord.gg/aBsvuX9b2Q)_
 
 If you want to see **_the result_** it's here :
 
-`💡 https://zuulaxx.ml/ ⎯⠀❐⠀⤬ `
+`💡 https://zuulaxx.fr/ ⎯⠀❐⠀⤬ `
